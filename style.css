@@ -2,6 +2,7 @@
 
 header {
   display: flex;
+
 }
 .menu {
   display: flex;
@@ -25,6 +26,7 @@ a {
 
 .body {
   background-color: cornsilk;
+  margin: auto;
 }
 .imagen,
 .iframe {
@@ -95,10 +97,17 @@ a {
   margin: 0px 10px 5px 5px;
 }
 
-@media (max-width: 500px) {
+.container-productos{
+  display:grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 550px 550px;
+  justify-content: center;
+} 
+
+/* @media (max-width: 500px) {
   .menu {
     flex-direction: column;
     height: 200px;
     width: 100%;
   }
-}
+} */
