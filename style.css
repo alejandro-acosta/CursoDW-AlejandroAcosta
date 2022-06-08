@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600&family=Oswald:wght@400;600&display=swap");
 
+body {
+  background-color: white;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+  "nav nav nav"
+  "main main main"
+  "footer footer footer";
+}
 header {
   display: flex;
 
@@ -12,7 +21,7 @@ header {
   width: 100%;
   list-style: none;
   padding: 5px 15px 5px 15px;
-
+  grid-area: nav;
 }
 .menu li a {
   text-decoration: none;
@@ -24,19 +33,17 @@ a {
   align-items: center;
 }
 
-.body {
-  background-color: cornsilk;
-  margin: auto;
+main {
+  grid-area: main;
 }
+
 .imagen,
 .iframe {
   width: 400px;
   height: 250px;
+  margin: 50px ;
 }
 
-.header {
-  flex-wrap: wrap;
-}
 .buscador {
   height: 55px;
   width: 780px;
@@ -65,6 +72,9 @@ a {
     height: 30px;
 
 }
+.header {
+  flex-wrap: wrap;
+}
    
 #footer{ 
   font-family: "Changa", sans-serif;
@@ -77,6 +87,7 @@ a {
   width: 100%;
   list-style: none;
   padding: 5px 15px 5px 15px;
+  grid-area: footer;
 }
 
 .redes{
